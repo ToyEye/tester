@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { projects } from "../Constants/constants";
-import { githubIcon, htmlIcon } from "../assets";
+import * as icons from "../assets";
 import { styles } from "../styles";
 
 export const staggerContainer = (staggerChildren, delayChildren) => {
@@ -152,7 +152,7 @@ const ProjectCard = ({
             target="_blank"
           >
             <img
-              src={githubIcon}
+              src={icons.githubIcon}
               alt="github"
               className="w-8 h-8 object-contain"
             />
@@ -164,7 +164,7 @@ const ProjectCard = ({
             target="_blank"
           >
             <img
-              src={htmlIcon}
+              src={icons.htmlIcon}
               alt="github"
               className="w-8 h-8 object-contain"
             />

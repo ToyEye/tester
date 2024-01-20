@@ -13,39 +13,41 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-import {
-  htmlIcon,
-  cssIcon,
-  jsIcon,
-  reactIcon,
-  gitIcon,
-  githubIcon,
-  viteIcon,
-  nodeIcon,
-  figmaIcon,
-  bookshelf,
-  finder,
-  messenger,
-  moviedb,
-  phonebook,
-  webstudio,
-  yachts,
-  avatar,
-} from "../assets";
+import * as allicons from "../assets";
+
+// import {
+//   htmlIcon,
+//   cssIcon,
+//   jsIcon,
+//   reactIcon,
+//   gitIcon,
+//   githubIcon,
+//   viteIcon,
+//   nodeIcon,
+//   figmaIcon,
+//   bookshelf,
+//   finder,
+//   messenger,
+//   moviedb,
+//   phonebook,
+//   webstudio,
+//   yachts,
+//   avatar,
+// } from "../assets";
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
 
 const media = {
-  htmlIcon,
-  cssIcon,
-  jsIcon,
-  reactIcon,
-  gitIcon,
-  githubIcon,
-  viteIcon,
-  nodeIcon,
-  figmaIcon,
-  avatar,
+  htmlIcon: allicons.htmlIcon,
+  cssIcon: allicons.cssIcon,
+  jsIcon: allicons.jsIcon,
+  reactIcon: allicons.reactIcon,
+  gitIcon: allicons.gitIcon,
+  githubIcon: allicons.githubIcon,
+  viteIcon: allicons.viteIcon,
+  nodeIcon: allicons.nodeIcon,
+  figmaIcon: allicons.figmaIcon,
+  avatar: allicons.avatar,
 };
 
 const icons = {
@@ -95,7 +97,7 @@ const projects = [
     name: "Messenger",
     description:
       "Individual project. Chat app with user authorisation, user search, ability to send messages, photos. Stack: HTML / SASS, styled-components, React, Firebase Authentication, Firestore",
-    image: messenger,
+    image: allicons.messenger,
     source_code_link: "",
     demo_link: "",
   },
@@ -103,7 +105,7 @@ const projects = [
     name: "Bookshelf",
     description:
       "Team project. A website with a responsive layout, auth, filterd by cathegory, add book to wishlist. Role: SCRUM, developer, header/ modal/ auth. Stack: HTML, CSS, JavaScript, REST API, Firebase",
-    image: bookshelf,
+    image: allicons.bookshelf,
     source_code_link: "",
     demo_link: "",
   },
@@ -111,7 +113,7 @@ const projects = [
     name: "Phonebook",
     description:
       "Individual project. Phonebook app with user authorisation, user filter, ability to add/remove user, connected to Swagger backend API. Stack: HTML, React, Redux Toolkit, MUI.",
-    image: phonebook,
+    image: allicons.phonebook,
     source_code_link: "",
     demo_link: "",
   },
@@ -119,7 +121,7 @@ const projects = [
     name: "MoviesDB",
     description:
       "Individual project. Movies base app with recent movies, movie search, movie details, connected to themoviedb.org.  Stack: HTML, React, Styled Components, Axios, REST API",
-    image: moviedb,
+    image: allicons.moviedb,
     source_code_link: "",
     demo_link: "",
   },
@@ -127,7 +129,7 @@ const projects = [
     name: "Finder",
     description:
       "Individual project. A website with a responsive layout for search photo/video on Pixabay.com, included search via tags. Stack: HTML, CSS, JavaScript, REST API, Parcel",
-    image: finder,
+    image: allicons.finder,
     source_code_link: "",
     demo_link: "",
   },
@@ -135,7 +137,7 @@ const projects = [
     name: "Yacht Adventures",
     description:
       "Team project. A website with a pesponsive layout. Role: SCRUM, developer, gallery section/page animations. Stack: HTML, CSS, JavaScript, SwiperJS, AOS, Vite Vanilla",
-    image: yachts,
+    image: allicons.yachts,
     source_code_link: "",
     demo_link: "",
   },
@@ -143,42 +145,42 @@ const projects = [
     name: "Web Studio",
     description:
       "Individual project. A website with a pesponsive layout. Stack: HTML, CSS, Vite",
-    image: webstudio,
+    image: allicons.webstudio,
     source_code_link: "",
     demo_link: "",
   },
 ];
 
 const memoji = {
-  image: [avatar],
+  image: [allicons.avatar],
 };
 
 const skills = [
   {
     id: "html",
     title: "HTML",
-    icon: htmlIcon,
+    icon: allicons.htmlIcon,
     description:
       "I have a strong command of HTML for organizing web pages and generating meaningful content that can be accessed by all users.",
   },
   {
     id: "css",
     title: "CSS",
-    icon: cssIcon,
+    icon: allicons.cssIcon,
     description:
       "I possess expertise in utilizing CSS to design web pages and craft visually captivating layouts that enhance the overall user experience.",
   },
   {
     id: "javascript",
     title: "JavaScript",
-    icon: jsIcon,
+    icon: allicons.jsIcon,
     description:
       "I have substantial experience in employing JavaScript to introduce interactivity and functionality into web pages, resulting in dynamic user interfaces.",
   },
   {
     id: "react",
     title: "React",
-    icon: reactIcon,
+    icon: allicons.reactIcon,
     description:
       "I am well-versed in React, proficient in creating reusable components and managing application state using hooks and context.",
   },
@@ -186,14 +188,14 @@ const skills = [
   {
     id: "git",
     title: "Git",
-    icon: gitIcon,
+    icon: allicons.gitIcon,
     description:
       "I am proficient in Git, managing code changes, collaborating with others, and resolving conflicts effectively.",
   },
   {
     id: "github",
     title: "GitHub",
-    icon: githubIcon,
+    icon: allicons.githubIcon,
     description:
       "I am skilled in using GitHub for seamless project collaboration, code sharing, and issue tracking. Through GitHub, I efficiently create and manage repositories and effectively present my work to potential employers.",
   },
@@ -201,7 +203,7 @@ const skills = [
   {
     id: "vite",
     title: "Vite",
-    icon: viteIcon,
+    icon: allicons.viteIcon,
     description:
       "I have gained considerable experience working with Vite for approximately six months, leveraging its capabilities to build React websites and seamlessly deploy them on platforms like Netlify.",
   },
@@ -209,14 +211,14 @@ const skills = [
   {
     id: "node",
     title: "Node",
-    icon: nodeIcon,
+    icon: allicons.nodeIcon,
     description:
       "When it comes to building web applications, I prefer using Node as my runtime environment over Yarn. I have expertise in leveraging Node.js to develop powerful and scalable web applications.",
   },
   {
     id: "figma",
     title: "Figma",
-    icon: figmaIcon,
+    icon: allicons.figmaIcon,
     description:
       "When it comes to building web applications, I prefer using Node as my runtime environment over Yarn. I have expertise in leveraging Node.js to develop powerful and scalable web applications.",
   },
