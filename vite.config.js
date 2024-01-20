@@ -7,4 +7,10 @@ export default defineConfig({
     { enforce: "pre", ...mdx() },
     react({ include: /\.(mdx|js|jsx|ts|tsx)$/ }),
   ],
+  base: "/",
+  resolve: {
+    alias: {
+      src: "/src",
+    },
+  },
 });

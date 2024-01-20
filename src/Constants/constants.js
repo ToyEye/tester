@@ -13,7 +13,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-import * as allicons from "../assets";
+import * as allicons from "/src/assets";
 
 // import {
 //   htmlIcon,

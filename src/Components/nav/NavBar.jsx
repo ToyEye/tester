@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../../styles.js";
 import { navLinks } from "../../Constants/constants";
-import * as icons from "../../assets/index.js";
+import * as icons from "/src/assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
